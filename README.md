@@ -42,6 +42,20 @@ Future projects may explore:
 - **Platforms:** Linux, macOS
 - **GPU Computing:** CUDA (planned)
 
+## Build
+
+On Linux or macOS, configure and build the Release and Debug versions with CMake:
+
+```sh
+cmake -B build/Release -DCMAKE_BUILD_TYPE=Release
+cmake --build build/Release
+
+cmake -B build/Debug -DCMAKE_BUILD_TYPE=Debug
+cmake --build build/Debug
+```
+
+The `raytracer` executable is written under the corresponding build directory.
+
 ## Philosophy
 
 The emphasis is on understanding rather than abstraction.
